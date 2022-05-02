@@ -1,2 +1,2 @@
 # iOSApp
-App developed during Mobile Systems Labs
+iOS App developed during Mobile Systems Labs
