@@ -2,17 +2,19 @@
 //  Place.swift
 //  Travels
 //
-//  Created by Andrea on 23/05/22.
+//  Created by Chiara Ceccarini on 09/05/22.
 //
 
 import Foundation
 import CoreLocation
 
+
+/// Model for our application
 struct Place: Identifiable, Decodable {
     var id: Int
     var name: String
-    var description: String
     var city: String
+    var description: String
     
     private var image: String
     var imageUrl: URL {
@@ -20,7 +22,7 @@ struct Place: Identifiable, Decodable {
     }
     
     private var coordinates: Coordinates
-    var locationCoordinates: CLLocationCoordinate2D {
+    var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
     }
 }

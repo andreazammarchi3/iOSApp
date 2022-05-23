@@ -2,12 +2,14 @@
 //  DataLoader.swift
 //  Travels
 //
-//  Created by Andrea on 23/05/22.
+//  Created by Chiara Ceccarini on 09/05/22.
 //
 
 import Foundation
 import SwiftUI
 
+
+/// ViewModel
 class DataLoader: ObservableObject {
     @Published var model = ModelData<Place>(fileName: "places")
     

@@ -2,7 +2,7 @@
 //  MapView.swift
 //  Travels
 //
-//  Created by Andrea on 02/05/22.
+//  Created by Chiara Ceccarini on 22/04/22.
 //
 
 import SwiftUI
@@ -11,24 +11,17 @@ import MapKit
 struct MapView: View {
     var locationCoordinates: CLLocationCoordinate2D
     
-    @State private var region = MKCoordinateRegion()
+    @State private var region = MKCoordinateRegion ()
     
     var body: some View {
         Map(coordinateRegion: $region)
             .onAppear {
-                setRegion(coordinate: locationCoordinates)
+                setRegion(locationCoordinates)
             }
     }
     
-    func setRegion(coordinate: CLLocationCoordinate2D) {
-        region = MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+    func setRegion(_ coordinate: CLLocationCoordinate2D) {
+        region = MKCoordinateRegion(center: coordinate,
+                                    span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
     }
 }
-
-/*
-struct MapView_Previews: PreviewProvider {
-    static var previews: some View {
-        MapView()
-    }
-}
- */

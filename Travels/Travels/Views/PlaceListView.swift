@@ -2,10 +2,8 @@
 //  PlaceListView.swift
 //  Travels
 //
-//  Created by Andrea on 23/05/22.
+//  Created by Chiara Ceccarini on 09/05/22.
 //
-
-import SwiftUI
 
 import SwiftUI
 
@@ -16,7 +14,7 @@ struct PlaceListView: View {
     var body: some View {
         NavigationView {
             List(viewModel.places) { place in
-                NavigationLink(destination: PlaceDescriptionView(place: place)) {
+                NavigationLink(destination: PlaceDetailsView(place: place)) {
                     PlaceRowView(place: place)
                 }
             }.navigationTitle("Places")
@@ -29,4 +27,3 @@ struct PlaceListView_Previews: PreviewProvider {
         PlaceListView(viewModel: DataLoader())
     }
 }
-

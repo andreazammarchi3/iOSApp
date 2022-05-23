@@ -1,41 +1,36 @@
 //
-//  CircleImageView.swift
+//  CicleImage.swift
 //  Travels
 //
-//  Created by Andrea on 02/05/22.
+//  Created by Chiara Ceccarini on 22/04/22.
 //
 
 import SwiftUI
 
-struct CircleImageView: View {
+struct CircleImage: View {
+    
     @ObservedObject var viewModel = DataLoader()
     var image: URL
     
     var body: some View {
-        ZStack{
-            Image(uiImage: viewModel.image)
+        ZStack {
+            Image (uiImage: viewModel.image)
                 .resizable()
                 .frame(width: 150, height: 150, alignment: .center)
-                .onAppear {
-                    // imageLoader.loadImage(imageName: "campus")
-                    viewModel.loadImage(url: image)
-                }
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
                 .shadow(radius: 7)
-            
+                .onAppear {
+                    //imageLoader.loadImage(imageName: "campus")
+                    viewModel.loadImage(url: image)
+                }
             CircleProgressView(isLoading: $viewModel.isLoading)
+               
         }
+        
+       
     }
 }
-
-/*
-struct CircleImageView_Previews: PreviewProvider {
-    static var previews: some View {
-        CircleImageView()
-    }
-}
- */
 
 struct CircleProgressView: View {
     @Binding var isLoading: Bool
@@ -46,3 +41,4 @@ struct CircleProgressView: View {
         }
     }
 }
+

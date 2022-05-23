@@ -2,21 +2,22 @@
 //  PlaceRowView.swift
 //  Travels
 //
-//  Created by Andrea on 23/05/22.
+//  Created by Chiara Ceccarini on 09/05/22.
 //
 
 import SwiftUI
 
+
+/// View for the NavigationLink
 struct PlaceRowView: View {
-    var place: Place
-    
     @ObservedObject var viewModel = DataLoader()
+    var place: Place
     
     var body: some View {
         HStack {
             Image(uiImage: viewModel.image)
                 .resizable()
-                .frame(width: 50, height: 50, alignment: .leading)
+                .frame(width: 50, height: 50)
                 .onAppear {
                     viewModel.loadImage(url: place.imageUrl)
                 }
@@ -24,11 +25,3 @@ struct PlaceRowView: View {
         }
     }
 }
-
-/*
-struct PlaceRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        PlaceRowView()
-    }
-}
-*/

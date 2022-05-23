@@ -2,7 +2,7 @@
 //  TravelsApp.swift
 //  Travels
 //
-//  Created by Andrea on 02/05/22.
+//  Created by Chiara Ceccarini on 22/04/22.
 //
 
 import SwiftUI

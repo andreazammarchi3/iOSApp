@@ -2,7 +2,7 @@
 //  ModelData.swift
 //  Travels
 //
-//  Created by Andrea on 23/05/22.
+//  Created by Chiara Ceccarini on 09/05/22.
 //
 
 import Foundation
@@ -13,8 +13,10 @@ struct ModelData<DataType> where DataType: Decodable {
     init(fileName: String) {
         list = [DataType]()
         
-        guard let file = Bundle.main.url(forResource: fileName, withExtension: ".json") else {fatalError("File \(fileName) not found")}
+        guard let file = Bundle.main.url(forResource: fileName, withExtension: ".json")
+        else {fatalError("File \(fileName) not found")}
         let data: Data
+        
         do {
             data = try Data(contentsOf: file)
         } catch {
