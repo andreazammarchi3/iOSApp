@@ -8,31 +8,34 @@
 import SwiftUI
 
 struct CircleImageView: View {
-    @ObservedObject var imageLoader = ImageLoader()
+    @ObservedObject var viewModel = DataLoader()
+    var image: URL
     
     var body: some View {
         ZStack{
-            Image(uiImage: imageLoader.image)
+            Image(uiImage: viewModel.image)
                 .resizable()
                 .frame(width: 150, height: 150, alignment: .center)
                 .onAppear {
                     // imageLoader.loadImage(imageName: "campus")
-                    imageLoader.loadImage(url: URL(string: "https://magazine.unibo.it/archivio/2018/inaugurato-il-nuovo-campus-di-cesena-allex-zuccherificio/cesena2.jpeg")!)
+                    viewModel.loadImage(url: image)
                 }
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.white, lineWidth: 4))
                 .shadow(radius: 7)
             
-            CircleProgressView(isLoading: $imageLoader.isLoading)
+            CircleProgressView(isLoading: $viewModel.isLoading)
         }
     }
 }
 
+/*
 struct CircleImageView_Previews: PreviewProvider {
     static var previews: some View {
         CircleImageView()
     }
 }
+ */
 
 struct CircleProgressView: View {
     @Binding var isLoading: Bool

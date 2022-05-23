@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Rocca di Cesena",
+        "city": "Cesena",
+        "id": 1,
+        "coordinates": {
+            "longitude": 12.230,
+            "latitude": 44.136
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacus velit, molestie vel ornare eu, dignissim a sapien. Vivamus volutpat dolor vel tempus pharetra. Pellentesque eu nibh lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam ante dolor, tristique pharetra elit sit amet, pretium rutrum justo. Integer vulputate elit rutrum ornare sollicitudin. Curabitur sed lectus interdum elit tempor tincidunt non at dui. Vestibulum vel consequat felis. Aliquam id leo a sapien eleifend semper. Pellentesque at condimentum elit. Morbi ac scelerisque tortor. Duis interdum velit at ante fringilla ornare.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/La_rocca_malatestiana_di_Cesena.jpg"
+    },
+    {
+        "name": "Campus Cesena",
+        "city": "Cesena",
+        "id": 2,
+        "coordinates": {
+            "longitude": 12.230,
+            "latitude": 44.136
+        },
+        "description": "Praesent volutpat, neque ac eleifend dapibus, velit nisl placerat erat, vel dapibus nisi velit vel arcu. Nullam sodales mauris tellus. Duis interdum id enim ac ullamcorper. Mauris tristique sit amet magna dictum pulvinar. Curabitur vitae placerat felis. Suspendisse non ante a lectus tempor vehicula. Praesent in semper erat. Integer tincidunt elit eu pellentesque ultrices.",
+        "image": "https://magazine.unibo.it/archivio/2018/inaugurato-il-nuovo-campus-di-cesena-allex-zuccherificio/cesena2.jpeg"
+    }
+]

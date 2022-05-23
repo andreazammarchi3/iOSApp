@@ -11,7 +11,7 @@ import SwiftUI
 struct TravelsApp: App {
     var body: some Scene {
         WindowGroup {
-            PlaceDescriptionView()
+            PlaceListView(viewModel: DataLoader())
         }
     }
 }
