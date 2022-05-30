@@ -10,9 +10,11 @@
 		D31AB7A3282965CB00F7EA01 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AB79E282965CB00F7EA01 /* PlaceListView.swift */; };
 		D31AB7A4282965CB00F7EA01 /* PlaceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AB79F282965CB00F7EA01 /* PlaceDetailsView.swift */; };
 		D31AB7A5282965CB00F7EA01 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AB7A0282965CB00F7EA01 /* MapView.swift */; };
-		D31AB7A6282965CB00F7EA01 /* CicleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AB7A1282965CB00F7EA01 /* CicleImage.swift */; };
+		D31AB7A6282965CB00F7EA01 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AB7A1282965CB00F7EA01 /* CircleImage.swift */; };
 		D31AB7A7282965CB00F7EA01 /* PlaceRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31AB7A2282965CB00F7EA01 /* PlaceRowView.swift */; };
 		D36E9FE6282A4B8C00016A08 /* PlaceEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36E9FE5282A4B8C00016A08 /* PlaceEntity.swift */; };
+		D3BD74B628338B1300DC8752 /* AddPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BD74B528338B1300DC8752 /* AddPlaceView.swift */; };
+		D3BD74B82833B1F900DC8752 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3BD74B72833B1F900DC8752 /* LocationViewModel.swift */; };
 		D3E6FE6B282962CF00AB2CEA /* TravelsCoreDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E6FE6A282962CF00AB2CEA /* TravelsCoreDataApp.swift */; };
 		D3E6FE6F282962D200AB2CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E6FE6E282962D200AB2CEA /* Assets.xcassets */; };
 		D3E6FE72282962D200AB2CEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E6FE71282962D200AB2CEA /* Preview Assets.xcassets */; };
@@ -28,9 +30,11 @@
 		D31AB79E282965CB00F7EA01 /* PlaceListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		D31AB79F282965CB00F7EA01 /* PlaceDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailsView.swift; sourceTree = "<group>"; };
 		D31AB7A0282965CB00F7EA01 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		D31AB7A1282965CB00F7EA01 /* CicleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CicleImage.swift; sourceTree = "<group>"; };
+		D31AB7A1282965CB00F7EA01 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D31AB7A2282965CB00F7EA01 /* PlaceRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRowView.swift; sourceTree = "<group>"; };
 		D36E9FE5282A4B8C00016A08 /* PlaceEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceEntity.swift; sourceTree = "<group>"; };
+		D3BD74B528338B1300DC8752 /* AddPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlaceView.swift; sourceTree = "<group>"; };
+		D3BD74B72833B1F900DC8752 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		D3E6FE67282962CF00AB2CEA /* TravelsCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelsCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E6FE6A282962CF00AB2CEA /* TravelsCoreDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelsCoreDataApp.swift; sourceTree = "<group>"; };
 		D3E6FE6E282962D200AB2CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,11 +61,12 @@
 		D31AB79D282965A900F7EA01 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D31AB7A1282965CB00F7EA01 /* CicleImage.swift */,
+				D31AB7A1282965CB00F7EA01 /* CircleImage.swift */,
 				D31AB7A0282965CB00F7EA01 /* MapView.swift */,
 				D31AB79F282965CB00F7EA01 /* PlaceDetailsView.swift */,
 				D31AB79E282965CB00F7EA01 /* PlaceListView.swift */,
 				D31AB7A2282965CB00F7EA01 /* PlaceRowView.swift */,
+				D3BD74B528338B1300DC8752 /* AddPlaceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 			children = (
 				D31AB79D282965A900F7EA01 /* Views */,
 				D3E6FE7E2829638C00AB2CEA /* DataLoader.swift */,
+				D3BD74B72833B1F900DC8752 /* LocationViewModel.swift */,
 				D3E6FE8E2829638D00AB2CEA /* ModelData.swift */,
 				D3E6FE7F2829638C00AB2CEA /* Place.swift */,
 				D36E9FE5282A4B8C00016A08 /* PlaceEntity.swift */,
@@ -189,14 +195,16 @@
 			files = (
 				D31AB7A4282965CB00F7EA01 /* PlaceDetailsView.swift in Sources */,
 				D31AB7A7282965CB00F7EA01 /* PlaceRowView.swift in Sources */,
+				D3BD74B628338B1300DC8752 /* AddPlaceView.swift in Sources */,
 				D3E6FE9F2829638D00AB2CEA /* ModelData.swift in Sources */,
 				D3E6FE77282962D200AB2CEA /* TravelsCoreData.xcdatamodeld in Sources */,
-				D31AB7A6282965CB00F7EA01 /* CicleImage.swift in Sources */,
+				D31AB7A6282965CB00F7EA01 /* CircleImage.swift in Sources */,
 				D31AB7A3282965CB00F7EA01 /* PlaceListView.swift in Sources */,
 				D36E9FE6282A4B8C00016A08 /* PlaceEntity.swift in Sources */,
 				D3E6FE74282962D200AB2CEA /* Persistence.swift in Sources */,
 				D3E6FE922829638D00AB2CEA /* DataLoader.swift in Sources */,
 				D31AB7A5282965CB00F7EA01 /* MapView.swift in Sources */,
+				D3BD74B82833B1F900DC8752 /* LocationViewModel.swift in Sources */,
 				D3E6FE6B282962CF00AB2CEA /* TravelsCoreDataApp.swift in Sources */,
 				D3E6FE932829638D00AB2CEA /* Place.swift in Sources */,
 			);
@@ -332,6 +340,7 @@
 				DEVELOPMENT_TEAM = 9L74B9K9KK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App requires GPS to track your position";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -361,6 +370,7 @@
 				DEVELOPMENT_TEAM = 9L74B9K9KK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App requires GPS to track your position";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -1,5 +1,5 @@
 //
-//  CicleImage.swift
+//  CircleImage.swift
 //  Travels
 //
 //  Created by Chiara Ceccarini on 22/04/22.
